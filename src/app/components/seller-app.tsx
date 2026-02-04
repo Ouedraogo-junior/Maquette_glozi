@@ -17,15 +17,15 @@ import { motion } from 'framer-motion';
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 
 const STATS = [
-  { label: 'Ventes', value: '1,284€', change: '+12%', trend: 'up' },
+  { label: 'Ventes', value: '125000 FCFA', change: '+12%', trend: 'up' },
   { label: 'Commandes', value: '24', change: '+5%', trend: 'up' },
   { label: 'Vues', value: '1,029', change: '-2%', trend: 'down' },
 ];
 
 const RECENT_ORDERS = [
-  { id: '#4901', name: 'Sneakers Air Max', price: '129€', status: 'En cours', color: 'text-amber-600 bg-amber-50' },
-  { id: '#4899', name: 'Fauteuil Scan', price: '85€', status: 'Livré', color: 'text-emerald-600 bg-emerald-50' },
-  { id: '#4895', name: 'iPhone 15 Pro', price: '999€', status: 'Livré', color: 'text-emerald-600 bg-emerald-50' },
+  { id: '#4901', name: 'Sneakers Air Max', price: '25000 FCFA', status: 'En cours', color: 'text-amber-600 bg-amber-50' },
+  { id: '#4899', name: 'Fauteuil Scan', price: '85000 FCFA', status: 'Livré', color: 'text-emerald-600 bg-emerald-50' },
+  { id: '#4895', name: 'iPhone 15 Pro', price: '350000 FCFA', status: 'Livré', color: 'text-emerald-600 bg-emerald-50' },
 ];
 
 export function SellerApp() {
@@ -42,7 +42,7 @@ export function SellerApp() {
             </div>
             <div>
               <h1 className="text-lg font-bold">Ma Boutique</h1>
-              <p className="text-[10px] text-emerald-600 font-bold uppercase tracking-wider">Mode Vendeur Actif</p>
+              <p className="text-[10px] text-emerald-600 font-bold uppercase tracking-wider">Mode boutique actif</p>
             </div>
           </div>
           <button className="p-2.5 bg-neutral-100 rounded-full">

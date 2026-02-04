@@ -42,10 +42,10 @@ const DATA = [
 ];
 
 const RECENT_SHOPS = [
-  { id: 1, name: 'Nike Paris', owner: 'Marc Dupont', status: 'Vérifié', sales: '14,2k€', joined: '12 Jan 2024' },
-  { id: 2, name: 'Electro World', owner: 'Sophie Martin', status: 'En attente', sales: '0€', joined: '25 Jan 2024' },
-  { id: 3, name: 'Vintage Chic', owner: 'Lucas Bernard', status: 'Vérifié', sales: '2,1k€', joined: '18 Dec 2023' },
-  { id: 4, name: 'Eco Living', owner: 'Emma Leroy', status: 'Signalé', sales: '840€', joined: '05 Jan 2024' },
+  { id: 1, name: 'Nike Paris', owner: 'Marc Dupont', status: 'Vérifié', sales: '140kFCFA', joined: '12 Jan 2024' },
+  { id: 2, name: 'Electro World', owner: 'Sophie Martin', status: 'En attente', sales: '0FCFA', joined: '25 Jan 2024' },
+  { id: 3, name: 'Vintage Chic', owner: 'Lucas Bernard', status: 'Vérifié', sales: '2,1kFCFA', joined: '18 Dec 2023' },
+  { id: 4, name: 'Eco Living', owner: 'Emma Leroy', status: 'Signalé', sales: '840kFCFA', joined: '05 Jan 2024' },
 ];
 
 export function BackOffice() {
@@ -170,7 +170,7 @@ export function BackOffice() {
 
           {/* Key Stats */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <StatCard label="Ventes Totales" value="245,039€" change="+12.5%" trend="up" color="indigo" />
+            <StatCard label="Ventes Totales" value="740.039FCFA" change="+12.5%" trend="up" color="indigo" />
             <StatCard label="Nouveaux Utilisateurs" value="1,240" change="+8.2%" trend="up" color="emerald" />
             <StatCard label="Commandes" value="842" change="-2.4%" trend="down" color="amber" />
             <StatCard label="Taux de conversion" value="3.2%" change="+0.4%" trend="up" color="rose" />

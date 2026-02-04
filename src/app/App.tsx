@@ -43,20 +43,20 @@ export default function App() {
       <Toaster position="top-center" />
 
       {/* Platform Switcher (Dev Only Helper) */}
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-white/80 backdrop-blur-md border border-neutral-200 rounded-full px-4 py-2 shadow-xl flex items-center gap-4">
+      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-6 z-50 bg-white/80 backdrop-blur-md border border-neutral-200 rounded-full px-4 py-2 shadow-xl flex items-center gap-4">
         <button
           onClick={() => setPlatform("buyer")}
           className={`flex items-center gap-2 px-3 py-1.5 rounded-full transition-all ${platform === "buyer" ? "bg-indigo-600 text-white shadow-md" : "hover:bg-neutral-100"}`}
         >
           <ShoppingBag size={16} />
-          <span className="text-xs font-medium">Buyer</span>
+          <span className="text-xs font-medium">Particulier</span>
         </button>
         <button
           onClick={() => setPlatform("seller")}
           className={`flex items-center gap-2 px-3 py-1.5 rounded-full transition-all ${platform === "seller" ? "bg-emerald-600 text-white shadow-md" : "hover:bg-neutral-100"}`}
         >
           <Store size={16} />
-          <span className="text-xs font-medium">Seller</span>
+          <span className="text-xs font-medium">Boutique</span>
         </button>
         <button
           onClick={() => setPlatform("admin")}
@@ -67,7 +67,8 @@ export default function App() {
         </button>
       </div>
 
-      <main className="h-screen overflow-hidden">
+      <main className="min-h-screen overflow-y-auto pb-32">
+
         <AnimatePresence mode="wait">
           {platform === "onboarding" && (
             <motion.div

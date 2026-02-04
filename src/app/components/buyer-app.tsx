@@ -21,7 +21,7 @@ const PRODUCTS = [
   {
     id: 1,
     name: "Sneakers Air Max 2024",
-    price: 129.99,
+    price: 25000.00,
     condition: "Neuf",
     category: "Mode",
     image: "https://images.unsplash.com/photo-1564518160120-94178fcdf5d4?auto=format&fit=crop&q=80&w=400",
@@ -31,7 +31,7 @@ const PRODUCTS = [
   {
     id: 2,
     name: "Fauteuil Scandinave",
-    price: 85.00,
+    price: 85000.00,
     condition: "Occasion",
     category: "Maison",
     image: "https://images.unsplash.com/photo-1567016526105-22da7c13161a?auto=format&fit=crop&q=80&w=400",
@@ -41,7 +41,7 @@ const PRODUCTS = [
   {
     id: 3,
     name: "iPhone 15 Pro",
-    price: 999.00,
+    price: 350000.00,
     condition: "Neuf",
     category: "Tech",
     image: "https://images.unsplash.com/photo-1764160377328-2d11d09a1d8e?auto=format&fit=crop&q=80&w=400",
@@ -51,7 +51,7 @@ const PRODUCTS = [
   {
     id: 4,
     name: "Appareil Photo Vintage",
-    price: 45.00,
+    price: 70000.00,
     condition: "Occasion",
     category: "Loisirs",
     image: "https://images.unsplash.com/photo-1760226642567-a5315592c810?auto=format&fit=crop&q=80&w=400",
@@ -70,7 +70,7 @@ export function BuyerApp() {
       <header className="px-5 pt-12 pb-4 flex items-center justify-between sticky top-0 bg-white/80 backdrop-blur-md z-10">
         <div>
           <h1 className="text-2xl font-bold tracking-tight">GLOZI</h1>
-          <p className="text-xs text-neutral-500 font-medium uppercase tracking-wider">Acheteur</p>
+          <p className="text-xs text-neutral-500 font-medium uppercase tracking-wider">Particulier</p>
         </div>
         <div className="flex gap-3">
           <button className="p-2.5 bg-neutral-100 rounded-full hover:bg-neutral-200 transition-colors">
@@ -155,7 +155,7 @@ export function BuyerApp() {
               <h4 className="font-semibold text-sm line-clamp-1">{product.name}</h4>
               <p className="text-neutral-500 text-xs mt-0.5">{product.seller}</p>
               <div className="flex items-center justify-between mt-2">
-                <span className="font-bold text-lg">{product.price.toFixed(2)}€</span>
+                <span className="font-bold text-lg">{product.price.toFixed(2)} F CFA</span>
                 <div className="flex items-center gap-1">
                   <Star size={12} className="fill-amber-400 text-amber-400" />
                   <span className="text-[10px] font-bold">{product.rating}</span>
@@ -224,8 +224,8 @@ export function BuyerApp() {
                     <h2 className="text-2xl font-bold">{selectedProduct.name}</h2>
                   </div>
                   <div className="text-right">
-                    <p className="text-2xl font-bold text-indigo-600">{selectedProduct.price.toFixed(2)}€</p>
-                    <p className="text-xs text-neutral-500 line-through">{(selectedProduct.price * 1.2).toFixed(2)}€</p>
+                    <p className="text-2xl font-bold text-indigo-600">{selectedProduct.price.toFixed(2)} F CFA</p>
+                    <p className="text-xs text-neutral-500 line-through">{(selectedProduct.price * 1.2).toFixed(2)} F CFA</p>
                   </div>
                 </div>
 
