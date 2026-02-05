@@ -64,7 +64,7 @@ export function BuyerApp() {
   const [activeTab, setActiveTab] = useState('home');
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
 
-  const renderHome = () => (
+  return (
     <div className="h-full flex flex-col">
       {/* Header */}
       <header className="px-5 pt-12 pb-4 flex items-center justify-between sticky top-0 bg-white/80 backdrop-blur-md z-10">
@@ -166,10 +166,10 @@ export function BuyerApp() {
         </div>
       </div>
 
-      {/* Navigation Bar */}
+      {/* Navigation Bar - 5 boutons */}
       <nav className="absolute bottom-0 left-0 right-0 bg-white/90 backdrop-blur-lg border-t border-neutral-100 px-6 py-4 flex items-center justify-between z-20">
         <button onClick={() => setActiveTab('home')} className={`flex flex-col items-center gap-1 ${activeTab === 'home' ? 'text-indigo-600' : 'text-neutral-400'}`}>
-          <Home size={22} variant={activeTab === 'home' ? 'bold' : 'linear'} />
+          <Home size={22} />
           <span className="text-[10px] font-semibold">Accueil</span>
         </button>
         <button onClick={() => setActiveTab('search')} className={`flex flex-col items-center gap-1 ${activeTab === 'search' ? 'text-indigo-600' : 'text-neutral-400'}`}>
@@ -285,6 +285,4 @@ export function BuyerApp() {
       </AnimatePresence>
     </div>
   );
-
-  return renderHome();
 }
